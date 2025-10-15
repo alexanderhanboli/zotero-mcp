@@ -69,6 +69,13 @@ pip install git+https://github.com/54yyyu/zotero-mcp.git
 zotero-mcp setup  # Auto-configure (Claude Desktop supported)
 ```
 
+#### Installing from local source
+
+```bash
+cd /path/to/zotero-mcp
+uv tool install .
+```
+
 ### Installing via Smithery
 
 To install Zotero MCP via [Smithery](https://smithery.ai/server/@54yyyu/zotero-mcp) for Claude Desktop:

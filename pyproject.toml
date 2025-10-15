@@ -44,6 +44,12 @@ dev = [
 [project.scripts]
 zotero-mcp = "zotero_mcp.cli:main"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/zotero_mcp"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"fastmcp.json" = "fastmcp.json"
+
 [tool.black]
 line-length = 88
 target-version = ["py310"]
